@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kalkidan 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="assets/music/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">💝 Kalkidan's Birthday 💝</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#letter">Love Letter</a></li>
+                <li><a href="#music">Music</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Happy Birthday Kalkidan! 🎈</h2>
+            <p class="hero-subtitle">A special gift filled with memories, love, and joy</p>
+            <button class="play-btn" id="playMusicBtn">🎵 Play Music</button>
+            <button class="scroll-btn" onclick="document.getElementById('photos').scrollIntoView({behavior: 'smooth'})">
+                Explore ↓
+            </button>
+        </div>
+        <div class="confetti" id="confetti"></div>
+    </section>
+
+    <!-- Photos Section -->
+    <section id="photos" class="section">
+        <h2 class="section-title">📸 Our Beautiful Memories</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/photos/photo1.jpg" alt="Memory 1">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/photos/photo2.jpg" alt="Memory 2">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/photos/photo3.jpg" alt="Memory 3">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/photos/photo4.jpg" alt="Memory 4">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/photos/photo5.jpg" alt="Memory 5">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/photos/photo6.jpg" alt="Memory 6">
+                <p class="photo-caption">Caption here...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="section">
+        <h2 class="section-title">🎬 Memorial Videos</h2>
+        <div class="videos-container">
+            <div class="video-item">
+                <h3>Video 1</h3>
+                <video controls>
+                    <source src="assets/videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Video 2</h3>
+                <video controls>
+                    <source src="assets/videos/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-item">
+                <h3>Video 3</h3>
+                <video controls>
+                    <source src="assets/videos/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section id="letter" class="section letter-section">
+        <h2 class="section-title">💌 A Letter for You</h2>
+        <div class="letter-container">
+            <div class="letter">
+                <p>
+                    Dear Kalkidan,
+                </p>
+                <p>
+                    On this special day, I want you to know how much you mean to me. 
+                    You bring so much joy, laughter, and love into my life every single day.
+                </p>
+                <p>
+                    Thank you for being you - for your kindness, your smile, and for making 
+                    every moment special. I cherish all the memories we've created together 
+                    and I look forward to creating many more.
+                </p>
+                <p>
+                    You deserve all the happiness in the world, today and every day.
+                </p>
+                <p>
+                    Happy Birthday! 🎂✨
+                </p>
+                <p>
+                    With all my love,<br>
+                    Your Friend
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="section">
+        <h2 class="section-title">🎵 Special Songs for You</h2>
+        <div class="music-container">
+            <div class="music-player">
+                <h3>Song 1</h3>
+                <audio controls>
+                    <source src="assets/music/song1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="music-player">
+                <h3>Song 2</h3>
+                <audio controls>
+                    <source src="assets/music/song2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="music-player">
+                <h3>Song 3</h3>
+                <audio controls>
+                    <source src="assets/music/song3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for Kalkidan's Birthday</p>
+        <p id="countdown"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
